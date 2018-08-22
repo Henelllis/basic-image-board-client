@@ -1,0 +1,62 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#E6993D, #FDC38B );
+  /* background-color: coral; */
+}
+
+.Header__container{
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+}
+
+.Header__links{
+  /* background-color: orange; */
+  font-size: 15px;
+  align-self: flex-start;
+  padding-left: .5rem;
+  padding-top: .5rem;
+  
+}
+
+.Header__links--anchor{
+  margin: 0 .5rem;
+  text-decoration: none;
+  color:maroon;
+}
+
+
+.Header__settings{
+  align-self: flex-end;
+  padding-right: .5rem;
+}
+
+.Header__settings--anchor{
+  text-decoration: none;
+  color:maroon;
+}
+
+.Banner_container{
+  display: flex;
+  flex-direction: column;
+}
+
+.Banner_container--image{
+  width: 25rem;
+  height: 10rem;
+  border: 1px solid maroon;
+}
+
+.Banner_container--header{
+  margin-bottom: .2rem;
+  color: maroon;
+}
