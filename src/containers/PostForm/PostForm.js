@@ -13,8 +13,8 @@ class PostForm extends Component {
     render() {
 
 
-        let postForm = null;
-
+        let postForm = null;    
+        // Reduce these into components and combine
         if(this.state.isFormShown){
             postForm = (
                 <div className="Post__form__expanded--container">

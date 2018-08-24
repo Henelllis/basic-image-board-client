@@ -177,50 +177,116 @@
 .Post__form__expanded--anchor {
   text-decoration: none;
 }
-/* 
 
-.Test {
+/* --------------------THREAD CSS--------------------------------- */
 
+/* :root {
+  --width-of-OP-thumb: 200px;
 }
 
-.Bigbox {
-  color: maroon;
-  border:1px solid maroon;
-  background-color: salmon;
-}
-
-.text {
-
-}
-
-.long {
-  resize:both;
-
-}
-
-.textArea{
-  background-color: red;
-  color:blue;
-}
-
-.captcha-text {
-  margin: 0;
-}
-
-.captcha {
-  width: 100%;
-}
-
-.captcha-box {
-  grid-column: 2/-1;
-}
-
-.Flex {
-  width: 100%;
+.Threads {
   display:flex;
-  justify-content: center; 
+  felx-direction: column;
+  background-color:wheat ;
+  height:500px;
 }
 
-.btn {
-  margin-left: 5px;
+.ThreadRepliesCount {
+    margin-left: calc(var(--width-of-OP-thumb) + 38px);
+    margin-top:.5rem;
+}
+
+.ImmediatechildThread {
+  margin-top:.5rem;
+  background-color:coral;
+  margin-left: calc(var(--width-of-OP-thumb) + 38px);
+}
+
+.childThread {
+  align-self:flex-start;
+  display:grid;
+  grid-template-rows:min-content min-content 1fr ;
+  grid-template-columns: min-content max-content;
+  background-color:coral;
+  margin-top:.5rem;
+}
+
+.ThumbContainer {
+  margin-left:1rem;
+}
+
+.PostThumb {
+  width: 8rem;
+  grid-row: 3/-1;
+  grid-column:1/1;
+  transform: scale(.8);
+}
+
+    
+
+.childThreadPostInfo{
+  grid-row:1/1;
+  grid-column:1/-1;
+  margin:0;
+}
+
+.childThreadThumbFile {
+  grid-row: 2/ 2;
+  grid-column:1/-1;
+  margin:0;
+
+}
+
+.ThreadContainer {
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column
+}
+
+.OriginalPost {
+  display:grid;
+  grid-template-rows:min-content 20px min-content;
+  grid-template-columns:max-content max-content;
+  justify-items: center;
+
+}
+.ThreadThumbFile {
+  margin:0;
+}
+
+.ThreadPostInfo {
+  margin:0;
+  grid-row: 2/2;
+    grid-column: 2/-1;
+  justify-self:start;
+  margin-left: 1rem;
+}
+
+.fileText {
+  background-color:red;
+  padding:0;
+  -webkit-margin-before:0;
+-webkit-margin-after:0;
+}
+
+.postInfo {
+    margin:0;
+    background-color:coral;
+}
+
+.ThreadContainer--post-content {
+  grid-column: 2/ 3;
+   grid-row:3/-1;
+  justify-self:start;
+  margin:0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.OrignalPostThumb {
+  width:var(--width-of-OP-thumb);
+  height:auto;
+    grid-row: 2/3;
 } */
+
