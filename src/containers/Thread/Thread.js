@@ -1,3 +1,18 @@
+import React, { Component } from 'react';
+import ThreadPost from '../../components/ThreadPost/ThreadPost';
+
+class Thread extends Component {
+  render() {
+    return (
+      <div className="Thread--container">
+        <ThreadPost threadPostId={this.props.threadId}/>
+      </div>
+    );
+  }
+}
+
+export default Thread;
+
 {/* <div class="Threads"> 
 <div class="ThreadContainer">
   <div class="OriginalPost">

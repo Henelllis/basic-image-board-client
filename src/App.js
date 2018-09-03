@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import PostForm from './containers/PostForm/PostForm';
+import PageOfThreads from './containers/PageOfThreads/PageOfThreads';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Header />
         <Banner />
         <PostForm />
+        <PageOfThreads/>
       </div>
     );
   }
