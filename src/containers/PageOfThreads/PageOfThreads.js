@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 import Thread from '../Thread/Thread';
 
-const threads = [
-    {threadId:1234566},
-    {threadId:1234589},
-    {threadId:1234499}
-]
-
-
-
 
 class PageOfThreads extends Component {
 
@@ -41,12 +33,13 @@ class PageOfThreads extends Component {
         const postCollection = threadDocRef.collection('ChildrenThreads');
 
         const orignalPostData = thread.data();
-
         const originalPost = {
             threadId : thread.id,
             threadTitle : orignalPostData.threadTitle,
             timeStamp : orignalPostData.timeStamp,
-            user: orignalPostData.user
+            user: orignalPostData.user,
+            numPosts: orignalPostData.numOfPosts,
+            message:orignalPostData.threadPostMessage
             //ignore responses get this to look pretty and we can get the gears a rolling
         }
         posts.originalPost = originalPost;
@@ -58,7 +51,6 @@ class PageOfThreads extends Component {
             })
             const generatedThreads = [...this.state.threads];
             generatedThreads.push(posts);
-            console.log('Generated rigt now' , generatedThreads);
 
             this.setState({threads: generatedThreads});
         }) 
@@ -68,8 +60,8 @@ class PageOfThreads extends Component {
         const postData = post.data();
         
         let threadPost = { 
-            postId :post.id,
-            postMessage: postData.threadPostMessage,
+            threadId :post.id,
+            message: postData.threadPostMessage,
             timeStamp: postData.timeStamp,
             user: postData.user
         }
