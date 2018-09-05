@@ -8,12 +8,13 @@ import PageOfThreads from './containers/PageOfThreads/PageOfThreads';
 
 class App extends Component {
   render() {
+    console.log('IN THE PROPS : ', this.props.firestore);
     return (
       <div className="App">
         <Header />
         <Banner />
         <PostForm />
-        <PageOfThreads/>
+        <PageOfThreads firestore={this.props.firestore}/>
       </div>
     );
   }

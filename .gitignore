@@ -9,6 +9,9 @@
 # production
 /build
 
+#config API key
+/src/fireBaseConfig.js
+
 # misc
 .DS_Store
 .env.local
